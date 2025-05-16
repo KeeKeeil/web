@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <title>KEE | כהנא הנדסת אנרגיה</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <meta name="description" content="יעוץ אנרגיה">
+    <meta name="copyright" content=" Kahane Energy Engineering LTD">
+
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KEE">
+    <meta property="og:description" content="Energy facilities Consulting ">
+    <meta property="og:url" content="https://kee.co.il">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2K5ZQZMTW2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-2K5ZQZMTW2');
+    </script>
+
+
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: fallback;
+            src: url('fonts/Poppins-Regular.woff2') format('woff2'), url('fonts/Poppins-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: fallback;
+            src: url('fonts/Poppins-Bold.woff2') format('woff2'), url('fonts/Poppins-Bold.ttf') format('truetype');
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-family: 'Poppins', -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            font-size: 17px;
+            min-height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+
+        main {
+            width: 60em;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        .footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 3em 1em;
+        }
+
+        .footer_logo img {
+            height: 3em;
+        }
+
+   
+
+        @media only screen and (max-width: 60em) {
+            .footer__nav {
+                flex-direction: column;
+            }
+        }
+
+
+        .footer hr {
+            border: 0;
+            border-top: 1px solid #1B65A4;
+            max-width: 60em;
+            margin: 3em auto;
+        }
+
+        .footer_copy {
+            color: #1B65A4;
+            font-size: 0.8em;
+        }
+
+        /* Nav func */
+        .nav {
+            background-color: rgb(253, 252, 252);
+        }
+
+         
+        .nav_content {
+            width: 60em;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav_logo img {
+            height: 5em;
+        }
+
+        .nav_item {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+            .nav_item a {
+                color: white;
+                text-decoration: none;
+            }
+
+  
+
+        /* Header func */
+        .header {
+            padding-top: 1em;
+            background-color: #F1A249;
+            background:  linear-gradient(30deg, #F1A249 50%, #ffffff 50%);
+        }
+
+            .header .nav {
+                background: transparent;
+            }
+
+                .header .nav::after {
+                    content: none;
+                }
+
+
+
+        .header_image {
+            max-height: 60vh;
+        }
+
+
+        /* Sections func */
+
+        .section {
+            padding: 3em 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 1em;
+        }
+
+        @media only screen and (min-width: 60em) {
+            .section:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        @media only screen and (max-width: 60em) {
+            .section {
+                flex-direction: column;
+                padding: 1em 0;
+            }
+
+            .section_image {
+                margin: 0 auto;
+            }
+        }
+
+        .section_content {
+            position: relative;
+        }
+
+
+        .section_title {
+            line-height: 2;
+            font-size: 2em;
+        }
+
+        
+
+        .section_image {
+            width: 25em;
+            max-width: 100%;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+            .section_image img {
+                height: 100%;
+                max-height: 20em;
+            }
+
+
+        .contact {
+            padding: 4em 1em;
+            background-color: #1B65A4;
+        }
+
+            .contact h2 {
+                margin-top: 0;
+                text-align: center;
+            }
+
+            .contact form {
+                width: 30em;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            .contact label {
+                font-weight: bold;
+                width: 100%;
+                margin-top: 1em;
+                display: block;
+            }
+
+            .contact input, .contact textarea, .contact select {
+                width: 100%;
+                border: 0;
+                padding: 0.5em;
+                display: block;
+                font-size: 1em;
+                font-family: inherit;
+                line-height: 1.5;
+                box-shadow: 4px 4px 0 rgba(0,0,0,0.3);
+                border: 1px solid rgb(178, 128, 2);
+            }
+
+            .contact button {
+                font-size: 1em;
+                width: 15em;
+                max-width: 100%;
+                background-color: black;
+                color: white;
+                font-weight: bold;
+                padding: 1em 2em;
+                border: 0;
+                display: block;
+                margin: 1em auto;
+            }
+    </style>
+</head>
+<body>
+    
+
+        
+<header class="header">
+    <div class="header_nav">  
+        <nav class="nav">
+            <div class="nav_content">   
+                <a class="nav_logo"><img src="images/kee-logo.png" alt="KEE" /></a>
+                <ul class="nav_item">
+                    <li class="nav_item"><a href="#contact"> צור קשר </a></li>
+                </ul>
+            </div>
+        </nav>    
+    </div>
+   
+</header>
+
+
+        <main>
+        
+<section class="section">
+    <div class="section_content">
+        <h3 class="section_title"> אופטימיזציה למערכות אנרגיה  </h3>
+        <p class="section_text">
+            באמצעות הכלי הייחודי שפיתחנו, ננתח וניצר עבורך פרופיל אנרגנטי המבוסס על צריכות החשמל, מיזוג האוויר והמים חמים ההיסטוריות או על בסיס אומדנים לצריכה עתידית
+            .המערכת מחשבת את הספק המתקן האנרגטי הנדרש מגז טבעי, סולארי או דלקים אחרים ומציגה את החיסכון הפוטנציאלי ואומדן לעלות ההקמה והכל בהתאם לתעריפים ועלויות התפעול בשוק.
+             בעזרתנו תוכלו לקבל החלטות מסחריות והנדסיות מושכלות בהקמה ותפעול מתקני אנרגיה,
+    ולהבטיח יעילות וחיסכון כלכלי מרבי.     
+        </p>
+    </div>
+    <div class="section_image">
+        <img src="images/keeapp.png" role="presentation" />
+    </div>
+</section>
+
+<section class="section">
+    <div class="section_content">
+        <h3 class="section_title"> תכנון מבוסס נתונים למערכות אנרגיה</h3>
+        <p class="section_text">אנו מבצעים תכנון ראשוני למתקן הייצור בהתבסס על נתונים מדויקים ותצורה אנרגטית אופטימלית, תוך אישור הלקוח ותיאום 
+            עם הצוות ההנדסי בפרויקט. עם סגירת קונספט העבודה, מגובש צוות הנדסי ממספר דיסציפלינות לביצוע תכנון מפורט וכתבי כמויות. תהליך זה,
+             המבוסס על ניתוח נתונים, מבטיח פתרונות מותאמים אישית, יעילות מקסימלית וחיסכון משמעותי בעלויות.
+
+        </p>
+    </div>
+    <div class="section_image">
+        <img src="images/power.jpg" role="presentation" />
+    </div>
+</section>
+
+<section class="section">
+    <div class="section_content">
+        <h3 class="section_title"> מערכות אנרגיה מתקדמות לעתיד בר-קיימא
+        </h3>
+        <p class="section_text">
+            אנו מציעים פתרונות כוללים למערכות אנרגיה, החל ממערכות ותשתיות גז טבעי וגפ"מ להפקת חום, ייצור חשמל ומתקני קוגנרציה לקצירת חום שיורי, 
+            ועד למערכות סולאריות קרקעיות ועל גבי גגות. ההשקעות במערכות אלו מלוות את הארגון עשרות שנים קדימה,
+             ולכן אנו מציגים תמונה היקפית בכל המישורים: כלכלי, הנדסי ורגולטורי. עם הייעוץ המקצועי שלנו,
+             תוכלו לקבל החלטות מושכלות שיבטיחו יעילות אנרגטית, קיימות וחיסכון כלכלי ארוך טווח.
+
+        </p>
+    </div>
+    <div class="section_image">
+        <img src="images/natural_gas_engine.jpg" role="presentation" />
+    </div>
+</section>
+
+<section class="section">
+    <div class="section_content">
+        <h3 class="section_title"> הכנת מכרזים ורישום למענקים</h3>
+        <p class="section_text">
+            אנו מתמחים בכתיבת מכרזים לאספקת דלקים ולהקמת מתקני אנרגיה. השירות שלנו כולל ניתוח צרכים,
+             תכנון אסטרטגי ויצירת מסמכים מקצועיים ומקיפים. בנוסף, אנו מציעים שירותי רישום  
+             והפקת מסמכים לקבלת מענקים מרשויות שלטוניות, כולל ליווי בכל שלב בתהליך הבירוקרטי עד קבלת המימון.
+              המטרה שלנו היא להבטיח שתזכו לתמיכה כלכלית ואנרגטית הדרושה להצלחת הפרויקט.        </p>
+    </div>
+    <div class="section_image">
+        <img src="images/gasgrant.jpg" role="presentation" />
+    </div>
+</section>
+
+        </main>
+
+<section class="contact" id="contact">
+    <h2>צור קשר</h2>
+    <form class="contact_form">
+        <label>
+            שם מלא
+            <input name="name" type="text">
+        </label>
+ 
+        <label>
+            הודעה
+            <textarea name="message" rows="5"></textarea>
+        </label>
+        <button type="submit">SEND</button>
+    </form>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('#contact form').addEventListener('submit', e => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const a = document.createElement('a');
+            a.href = (
+                `mailto:moshe@kee.co.il`
+                + `?subject=${encodeURIComponent('Contact request from ' + formData.get('name'))}`
+                + `&body=${encodeURIComponent(formData.get('message'))}`
+            );
+            a.target = '_blank';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        });
+    });
+    </script>
+</section>
+
+
+        
+        <footer class="footer">
+            <div class="footer_logo"><img src="images/kee-logo.png" alt="KEE" /></div>
+            <p> 053-2006001 | משרדנו - חיים משה שפירא קומה 4, אשדוד </p>
+            <hr>
+            <p class="footer_copy"> Kahane Energy Engineering ©</p>
+        </footer>
+        
+    
+</body>
+</html>
